@@ -1,0 +1,47 @@
+<mat-toolbar fxLayout="row" class="navbar" [ngClass.lt-md]="'navbar-sm'">
+    <span fxFlex><b>Library A</b></span>
+    <button mat-button routerLink='/home' routerLinkActive="active" [fxShow]="true" [fxShow.xs]="false"
+        [fxShow.sm]="true">
+        <span>Home</span>
+    </button>
+    <button mat-button routerLink='/books' routerLinkActive="active" [fxShow]="true" [fxShow.xs]="false"
+        [fxShow.sm]="true">
+        <span>Books</span>
+    </button>
+    <button mat-button routerLink='/authors' routerLinkActive="active" [fxShow]="true" [fxShow.xs]="false"
+        [fxShow.sm]="true">
+        <span>Authors</span>
+    </button>
+    <button mat-flat-button color="primary" routerLink='/add' [fxShow]="true" [fxShow.xs]="false"
+        [fxShow.sm]="true">
+        <span>Add New Book</span>
+    </button>
+    <button mat-button routerLink='/signin' [fxShow]="true" [fxShow.xs]="false" [fxShow.sm]="true">
+        <span>Log in</span>
+    </button>
+
+
+    <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.xs>
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #dropMenu="matMenu">
+        <button mat-button routerLink='/home' routerLinkActive="active" [fxShow]="true" [fxShow.xs]="true" [fxShow.sm]="false" >
+        <span>Home</span>
+    </button><br>
+    <button mat-button routerLink='/books' routerLinkActive="active" [fxShow]="true" [fxShow.xs]="true"
+        [fxShow.sm]="false">
+        <span>Books</span>
+    </button><br>
+    <button mat-button routerLink='/authors' routerLinkActive="active" [fxShow]="true" [fxShow.xs]="true"
+        [fxShow.sm]="false">
+        <span>Authors</span>
+    </button><br>
+    <button mat-flat-button color="primary" routerLink='/add' [fxShow]="true" [fxShow.xs]="true"
+        [fxShow.sm]="false">
+        <span>Add New Book</span>
+    </button><br>
+    <button mat-button routerLink='/signin' [fxShow]="true" [fxShow.xs]="true" [fxShow.sm]="false">
+        <span>Log in</span>
+    </button>
+    </mat-menu>
+</mat-toolbar>

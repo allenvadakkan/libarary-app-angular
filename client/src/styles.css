@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, "Helvetica Neue", sans-serif;
+}
+
+.box {
+  padding:24px 60px;
+}
+
+.box-lt-md {
+  padding-bottom: 24px 0px;
+}
+
+.illustration {
+  height: 360px;
+  width: auto;
+  padding: 48px;
+}

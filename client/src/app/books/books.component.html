@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="mat-display-1">collection of books !</h1>
+
+
+    <div fxLayout="row wrap" fxLayoutGap="32px" fxLayoutAlign="flex-start" style="padding: 4px;">
+        <ng-container *ngFor="let _ of [1,2,3]">
+            <mat-card class="example-card" fxFlex="0 1 calc(33.3% - 32px)">
+                <img src="../../assets/images/download.jpg" height="auto" width="175px"
+                    alt="book image">
+                <mat-card-content>
+                    <p>Finance Book</p>
+                    <h2>Rich dad poor dad</h2>
+                    <h4>Book by Robert T. kiyosaki</h4>
+                    <p>300 Pages</p>
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-stroked-button routerLink="/books/1" color="primary">More Info</button>
+                </mat-card-actions>
+            </mat-card>
+        </ng-container>
+    </div>
+</div>

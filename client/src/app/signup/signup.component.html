@@ -1,0 +1,33 @@
+<div fxLayout.lt-md="column" fxLayout.gt-md="row" fxLayoutAlign="space-evenly center" class="box"
+    [ngClass.lt-md]="'box-lt-md'">
+    <div fxFlex="30">
+        <h1 class="mat-display-1">Create an account
+        </h1>
+
+        <mat-form-field style="width: 100%;" appearance="fill">
+            <mat-label>Full name</mat-label>
+            <input matInput placeholder="Ex. Pizza">
+        </mat-form-field>
+        <br>
+        <mat-form-field style="width: 100%;" appearance="fill">
+            <mat-label>Email address</mat-label>
+            <input matInput placeholder="Ex. Pizza">
+        </mat-form-field>
+        <br>
+        <mat-form-field style="width: 100%;" appearance="fill">
+            <mat-label>Create password</mat-label>
+            <input matInput placeholder="Ex. Pizza">
+        </mat-form-field>
+        <br>
+        <mat-form-field style="width: 100%;" appearance="fill">
+            <mat-label>Confirm password</mat-label>
+            <input matInput placeholder="Ex. Pizza">
+        </mat-form-field>
+        <br><br>
+
+        <button mat-flat-button color="primary" routerLink="/home" style="width: 100%;">Get Started For Free</button>
+        <br>
+        <br>
+        <h4>Already have an account? <a href="./signin">Login</a></h4>
+    </div>
+</div>

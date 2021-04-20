@@ -1,0 +1,63 @@
+<div fxLayout.lt-md="column" fxLayout.gt-md="row" fxLayoutAlign="space-evenly center" class="box"
+    [ngClass.lt-md]="'box-lt-md'">
+    <div fxFlex="0">
+        <h1 class="mat-display-1">Add new book
+        </h1>
+
+        <mat-form-field>
+            <mat-label>Book Title</mat-label>
+            <input matInput placeholder="Book Title" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Book Author</mat-label>
+            <input matInput placeholder="Book Author" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Genere</mat-label>
+            <input matInput placeholder="Ex. Fiction, Horror, Sci-fi" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Language</mat-label>
+            <input matInput placeholder="Ex. English" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Publisher</mat-label>
+            <input matInput placeholder="Publisher name" required>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>Page count</mat-label>
+            <input matInput placeholder="Ex. 360" required>
+        </mat-form-field>
+        <br>
+        <label for="book-cover">Add book cover</label><br>
+        <input type="file">
+        <br>
+        <br>
+        <label for="author-image">Add author image</label>
+        <br>
+        <input type="file">
+        <br>
+        <br>
+        <mat-form-field>
+            <mat-label>About book</mat-label>
+            <textarea matInput></textarea>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label>About author</mat-label>
+            <textarea matInput></textarea>
+        </mat-form-field>
+        <br>
+        <div>
+            <button mat-flat-button color="#ff9f34" style="margin-right: 8px;" routerLink="books">Add Book</button> 
+            <button mat-stroked-button routerLink="books">Cancel</button>
+        </div>
+        <br>
+        <br>
+    </div>
+</div>
